@@ -13,7 +13,7 @@
 	},
 	"license": "Apache-2.0",
 	"scripts": {
-		"push": "tsc && tsup && np"
+		"push": "tsc && tsup && np --no-tests --message \"chore: v%s\""
 	},
 	"keywords": [
 		"eslint",
