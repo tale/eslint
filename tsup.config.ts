@@ -12,10 +12,7 @@ export default defineConfig({
 	},
 	clean: true,
 	entry: ['./eslint.ts'],
-	format: [
-		'cjs',
-		'esm'
-	],
+	format: ['cjs',],
 	platform: 'node',
 	target: 'node16'
 })

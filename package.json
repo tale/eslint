@@ -4,10 +4,8 @@
 	"description": "Aarnav Tale's personal ESLint Configuration",
 	"author": "Aarnav Tale <tale@chariz.com>",
 	"main": "./dist/eslint.js",
-	"module": "./dist/eslint.mjs",
 	"exports": {
 		".": {
-			"import": "./dist/eslint.mjs",
 			"require": "./dist/eslint.js"
 		}
 	},
