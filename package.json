@@ -51,7 +51,6 @@
 	},
 	"peerDependencies": {
 		"eslint": ">= 8",
-		"jest": "*",
 		"typescript": "*"
 	},
 	"dependencies": {
