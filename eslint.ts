@@ -41,7 +41,7 @@ export default {
 			offsetTernaryExpressions: true
 		}],
 		'newline-per-chained-call': ['error', {
-			ignoreChainWithDepth: 2
+			ignoreChainWithDepth: 1
 		}],
 		'comma-dangle': ['error', 'never'],
 		'no-implicit-coercion': 'error',
