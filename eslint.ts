@@ -12,6 +12,7 @@ module.exports = {
 		'xo-react',
 		'xo-typescript',
 		'plugin:react/recommended',
+		'plugin:react/jsx-runtime',
 		'plugin:react-hooks/recommended',
 		'plugin:unicorn/all'
 	],
