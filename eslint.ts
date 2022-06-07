@@ -72,6 +72,7 @@ module.exports = {
 				camelCase: true
 			}
 		}],
+		'unicorn/no-abusive-eslint-disable': 'off',
 		'unicorn/no-useless-undefined': ['error', {
 			checkArguments: false
 		}]
