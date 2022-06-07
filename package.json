@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-tale",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Aarnav Tale's personal ESLint Configuration",
 	"author": "Aarnav Tale <tale@chariz.com>",
 	"main": "./dist/.eslint.js",
