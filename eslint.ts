@@ -34,6 +34,14 @@ module.exports = {
 	},
 	rules: {
 		'@typescript-eslint/comma-dangle': ['error', 'never'],
+		'@typescript-eslint/naming-convention': ['error', {
+			format: [
+				'strictCamelCase',
+				'strictPascalCase',
+				'snake_case',
+				'UPPER_CASE'
+			]
+		}],
 		'@typescript-eslint/object-curly-spacing': ['error', 'always'],
 		'@typescript-eslint/semi': ['error', 'never'],
 		'array-callback-return': 'error',
@@ -69,7 +77,8 @@ module.exports = {
 		'unicorn/filename-case': ['error', {
 			cases: {
 				pascalCase: true,
-				camelCase: true
+				camelCase: true,
+				snakeCase: true
 			}
 		}],
 		'unicorn/no-abusive-eslint-disable': 'off',
