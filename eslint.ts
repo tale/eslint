@@ -35,11 +35,10 @@ module.exports = {
 	rules: {
 		'@typescript-eslint/comma-dangle': ['error', 'never'],
 		'@typescript-eslint/naming-convention': ['error', {
+			selector: 'default',
 			format: [
 				'strictCamelCase',
-				'strictPascalCase',
-				'snake_case',
-				'UPPER_CASE'
+				'snake_case'
 			]
 		}],
 		'@typescript-eslint/object-curly-spacing': ['error', 'always'],
