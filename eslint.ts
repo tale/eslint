@@ -38,6 +38,7 @@ module.exports = {
 			selector: 'default',
 			format: [
 				'strictCamelCase',
+				'StrictPascalCase',
 				'snake_case'
 			]
 		}],
