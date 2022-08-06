@@ -36,6 +36,7 @@ module.exports = {
 		'@typescript-eslint/comma-dangle': ['error', 'never'],
 		'@typescript-eslint/naming-convention': ['error', {
 			selector: 'default',
+			leadingUnderscore: 'allow',
 			format: [
 				'strictCamelCase',
 				'StrictPascalCase',
