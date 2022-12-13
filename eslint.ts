@@ -47,7 +47,8 @@ module.exports = {
 		'@typescript-eslint/semi': ['error', 'never'],
 		'array-callback-return': 'error',
 		eqeqeq: ['error', 'always'],
-		indent: ['error', 'tab', {
+		indent: 'off',
+		'@typescript-eslint/indent': ['error', 'tab', {
 			offsetTernaryExpressions: true
 		}],
 		'newline-per-chained-call': ['error', {
