@@ -52,7 +52,7 @@ module.exports = {
 			offsetTernaryExpressions: true
 		}],
 		'newline-per-chained-call': ['error', {
-			ignoreChainWithDepth: 1
+			ignoreChainWithDepth: 2
 		}],
 		'comma-dangle': ['error', 'never'],
 		'no-implicit-coercion': 'error',
