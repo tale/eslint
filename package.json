@@ -1,66 +1,52 @@
 {
 	"name": "eslint-config-tale",
+	"type": "module",
 	"version": "1.0.16",
 	"description": "Aarnav Tale's personal ESLint Configuration",
-	"author": "Aarnav Tale <tale@chariz.com>",
-	"main": "./dist/eslint.js",
+	"main": "./eslint.config.js",
 	"exports": {
 		".": {
-			"require": "./dist/eslint.js"
+			"import": "./eslint.config.js"
 		}
 	},
-	"license": "Apache-2.0",
+	"license": "MIT",
 	"scripts": {
-		"push": "tsc && tsup && np --no-cleanup --no-tests --message \"chore: v%s\""
+		"push": "np --no-cleanup --no-tests --message \"chore: v%s\""
 	},
 	"keywords": [
 		"eslint",
-		"eslintconfig",
-		"esm",
-		"react",
-		"preact",
+		"javascript",
 		"typescript",
-		"es2022",
-		"es2021",
-		"es2020",
-		"es2019",
-		"es2018",
-		"es2017",
-		"es2016",
-		"es2015",
-		"es6",
-		"es7",
-		"es8"
+		"react",
+		"unicorn"
 	],
+	"homepage": "https://github.com/tale/eslint#readme",
+	"author": {
+		"name": "Aarnav Tale",
+		"email": "aarnavtale@icloud.com",
+		"url": "https://tale.me"
+	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/tale/eslint.git"
-	},
-	"bugs": {
-		"url": "https://github.com/tale/eslint/issues"
-	},
-	"homepage": "https://github.com/tale/eslint#readme",
-	"devDependencies": {
-		"@types/eslint": "^8.37.0",
-		"@types/node": "^18.15.12",
-		"np": "^7.7.0",
-		"tsup": "^6.7.0",
-		"typescript": "^5.0.4"
-	},
-	"peerDependencies": {
-		"eslint": ">= 8",
-		"typescript": "*"
+		"url": "https://github.com/tale/eslint.git"
 	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.59.0",
-		"@typescript-eslint/parser": "^5.59.0",
-		"eslint": "^8.38.0",
-		"eslint-config-xo": "^0.43.1",
-		"eslint-config-xo-react": "^0.27.0",
-		"eslint-config-xo-typescript": "^0.57.0",
-		"eslint-plugin-react": "^7.32.2",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"eslint-plugin-simple-import-sort": "^10.0.0",
-		"eslint-plugin-unicorn": "^46.0.0"
+		"@eslint/js": "^9.2.0",
+		"@stylistic/eslint-plugin": "^2.1.0",
+		"eslint": "^8.57.0",
+		"eslint-config-flat-gitignore": "^0.1.5",
+		"eslint-plugin-react": "^7.34.1",
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-unicorn": "^53.0.0",
+		"typescript-eslint": "^7.9.0"
+	},
+	"devDependencies": {
+		"np": "^10.0.5"
+	},
+	"peerDependencies": {
+		"eslint": ">= 8"
+	},
+	"engines": {
+		"node": ">=16"
 	}
 }
