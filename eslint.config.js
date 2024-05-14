@@ -1,6 +1,4 @@
 import es from '@eslint/js'
-import { dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
 import eslint from 'typescript-eslint'
 import react from 'eslint-plugin-react'
 import hooks from 'eslint-plugin-react-hooks'
@@ -8,7 +6,6 @@ import unicorn from 'eslint-plugin-unicorn'
 import stylistic from '@stylistic/eslint-plugin'
 import gitignore from 'eslint-config-flat-gitignore'
 
-const dir = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url))
 export default eslint.config(
 	gitignore(),
 	es.configs.recommended,
@@ -16,7 +13,9 @@ export default eslint.config(
 	...eslint.configs.strictTypeChecked,
 	...eslint.configs.stylisticTypeChecked,
 	unicorn.configs['flat/recommended'],
-	stylistic.configs['recommended-flat'],
+	stylistic.configs.customize({
+		indent: 'tabs'
+	})
 
 	// https://github.com/facebook/react/issues/28313
 	{
@@ -36,8 +35,7 @@ export default eslint.config(
 	{
 		languageOptions: {
 			parserOptions: {
-				project: true,
-				tsconfigRootDir: dir,
+				project: './tsconfig.json',
 				ecmaFeatures: {
 					jsx: true
 				}
