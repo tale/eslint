@@ -15,7 +15,7 @@ export default eslint.config(
 	unicorn.configs['flat/recommended'],
 	stylistic.configs.customize({
 		indent: 'tabs'
-	})
+	}),
 
 	// https://github.com/facebook/react/issues/28313
 	{
