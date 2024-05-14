@@ -14,7 +14,8 @@ export default eslint.config(
 	...eslint.configs.stylisticTypeChecked,
 	unicorn.configs['flat/recommended'],
 	stylistic.configs.customize({
-		indent: 'tabs'
+		braceStyle: '1tbs',
+		indent: 'tab'
 	}),
 
 	// https://github.com/facebook/react/issues/28313
@@ -67,6 +68,9 @@ export default eslint.config(
 			'array-callback-return': 'error',
 			'eqeqeq': ['error', 'always'],
 			'no-implicit-coercion': 'error',
+			'no-empty': ['error', {
+				allowEmptyCatch: true
+			}],
 			'no-var': 'error',
 			'object-shorthand': ['error', 'always'],
 			'prefer-const': ['error', {
