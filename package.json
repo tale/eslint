@@ -1,7 +1,7 @@
 {
 	"name": "eslint-config-tale",
 	"type": "module",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Aarnav Tale's personal ESLint Configuration",
 	"main": "./eslint.config.js",
 	"types": "./eslint.d.ts",
