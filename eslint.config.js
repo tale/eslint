@@ -5,6 +5,7 @@ import hooks from 'eslint-plugin-react-hooks'
 import unicorn from 'eslint-plugin-unicorn'
 import stylistic from '@stylistic/eslint-plugin'
 import gitignore from 'eslint-config-flat-gitignore'
+import sorter from 'eslint-plugin-simple-import-sort'
 
 export default eslint.config(
 	gitignore(),
@@ -17,7 +18,15 @@ export default eslint.config(
 		braceStyle: '1tbs',
 		indent: 'tab'
 	}),
-
+	{
+		rules: {
+			'import-sort/imports': 'error',
+			'import-sort/exports': 'error'
+		},
+		plugins: {
+			'import-sort': sorter
+		}
+	},
 	// https://github.com/facebook/react/issues/28313
 	{
 		rules: {
@@ -77,7 +86,6 @@ export default eslint.config(
 				destructuring: 'all'
 			}],
 			'prefer-template': 'error',
-			'sort-imports': 'warn',
 		}
 	}
 )
